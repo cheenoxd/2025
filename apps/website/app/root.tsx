@@ -29,14 +29,17 @@ export const links: LinksFunction = () => [
 
 export default function App() {
   return (
-    <html lang="en" className="dark scroll-smooth scroll-pt-16">
+    <html
+      lang="en"
+      className="dark scroll-smooth scroll-pt-16 overflow-x-hidden"
+    >
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
       </head>
-      <body className="!pointer-events-auto">
+      <body className="!pointer-events-auto overflow-x-hidden">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
